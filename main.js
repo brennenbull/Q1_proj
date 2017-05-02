@@ -5,39 +5,19 @@ $(document).ready(function(){
     function makeMeteorObject(data, array) {
       for(var i = 0; i < data.length; i++){
         if(data[i].geolocation !== undefined && data[i].mass !== undefined && data[i].name !== undefined && data[i].year !== undefined){
-          var meteor = {}
-          meteor.coordinates = [data[i].geolocation.coordinates[1], data[i].geolocation.coordinates[0]]
+          var meteor = {};
+          meteor.coordinates = [data[i].geolocation.coordinates[1], data[i].geolocation.coordinates[0]];
           meteor.pixelPosition = convertGeoToPixel(data[i].geolocation.coordinates[1], data[i].geolocation.coordinates[0]);
           meteor.mass = data[i].mass;
           meteor.name = data[i].name;
           meteor.year = data[i].year;
+          array.push(meteor);
         }
-        array.push(meteor);
       }
     }
     makeMeteorObject(data, objectArray);
 
-  console.log(objectArray);
-
-
-    // var meteorObjectArray = [];
-    //
-    // function makeMeteorObject(meteordata) {
-    //   for(var i = 0; i < meteordata.length; i++){
-    //     if(meteordata[i].geolocation !== undefined && meteordata[i].mass !== undefined && meteordata[i].name !== undefined && meteordata[i].year !== undefined){
-    //       var meteor = {}
-    //       meteor.coordinates = [meteordata[i].geolocation.coordinates[1], meteordata[i].geolocation.coordinates[0]]
-    //       meteor.pixelPosition = convertGeoToPixel(meteordata[i].geolocation.coordinates[1], meteordata[i].geolocation.coordinates[0]);
-    //       meteor.mass = meteordata[i].mass;
-    //       meteor.name = meteordata[i].name;
-    //       meteor.year = meteordata[i].year;
-    //     }
-    //     meteorObjectArray.push(meteor);
-    //   }
-    // }
-    //
-    // makeMeteorObject(meteordata);
-
+    console.log(objectArray);
 
     function bottomRadians(bottomlat){
       var mapLatBottomDegree = bottomlat * Math.PI / 180;
@@ -70,7 +50,7 @@ $(document).ready(function(){
             position: 'absolute',
             left: Math.floor(dataArray[i].pixelPosition.x)+'px',
             top: Math.floor(dataArray[i].pixelPosition.y)+'px'
-          }
+          };
           $point.addClass(className);
           $point.attr('id', idName);
           $point.css(styles);

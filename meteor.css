@@ -13,29 +13,47 @@ h1{
   font-family: monospace;
 }
 
-.point-small{
-  background-color: black;
+.point-xs{
+  /*background-color: #F5D23A;*/
+  background-color: grey;
   height:5px;
   width:5px;
   border-radius: 100%;
   position: absolute;
 }
 
-.point-med{
-  background-color: blue;
+.point-sm{
+  background-color: #FFB53C;
   height:8px;
   width:8px;
   border-radius: 100%;
   position: absolute;
 }
 
-.point-lg{
-  background-color: red;
-  height:12px;
-  width:12px;
+.point-md{
+  background-color: #E87737;
+  height:11px;
+  width:11px;
   border-radius: 100%;
   position: absolute;
 }
+
+.point-lg{
+  background-color: #FF4D3C;
+  height:13px;
+  width:13px;
+  border-radius: 100%;
+  position: absolute;
+}
+
+.point-xl{
+  background-color: #F53AB2;
+  height:15px;
+  width:15px;
+  border-radius: 100%;
+  position: absolute;
+}
+
 .rangeslider,
 input[type='range'] {
   max-width: 1400px;

@@ -1,0 +1,63 @@
+.worldMap {
+  position: relative;
+  width: 1021px;
+  height: 600px;
+  margin: auto;
+}
+
+body{
+  background-color: #959ca8;
+}
+
+h1{
+  font-family: monospace;
+}
+
+.point-small{
+  background-color: black;
+  height:5px;
+  width:5px;
+  border-radius: 100%;
+  position: absolute;
+}
+
+.point-med{
+  background-color: blue;
+  height:8px;
+  width:8px;
+  border-radius: 100%;
+  position: absolute;
+}
+
+.point-lg{
+  background-color: red;
+  height:12px;
+  width:12px;
+  border-radius: 100%;
+  position: absolute;
+}
+.rangeslider,
+input[type='range'] {
+  max-width: 1400px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.rangeslider__ruler {
+  cursor: pointer;
+  font-size: .7em;
+  margin: 20px 3px 0 3px;
+  position: relative;
+  top: 30px;
+  text-align: justify;
+}
+
+/*// Workaround to justify only one-line.
+// Extra element to force a new line.*/
+.rangeslider__ruler:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+
+.rangeslide

@@ -1,0 +1,30 @@
+#map {
+  position: relative;
+  width: 1021px;
+  height: 600px;
+  margin: auto;
+}
+
+.rangeslider,
+input[type='range'] {
+  max-width: 1400px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.rangeslider__ruler {
+  cursor: pointer;
+  font-size: .6rem;
+  margin: 20px 3px 0 3px;
+  position: relative;
+  top: 30px;
+  text-align: justify;
+}
+
+/*// Workaround to justify only one-line.
+// Extra element to force a new line.*/
+.rangeslider__ruler:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}

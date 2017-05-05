@@ -1,0 +1,14 @@
+Q1 Project:
+Proposal: My Project shows the rate and size of meteorites that have been recorded or collected in the past 1600 years. This helps to show our relationship with the cosmos and the distribution of meteorite impacts over the planet. With this project I want to render a large data set into an interactive and relatable application.
+
+Technology Used: Google Maps API, Data.gov API, Javascript, JQuery, Bootstrap.
+
+MVP: Map meteorites using the google maps api and provide the user with a dynamic date filter. Make the map point size relative to the mass of the meteorite. Show the user information about a given meteorite and plots the users position.
+
+Stretch Goals: Clickable meteorite makers that populate a modal. Use the wikipedia api to show detailed meteorite information.
+
+User Epic:
+1: As as user I want to zoom in on a specific region and see how the meteors populate that region.
+
+User Stories:
+1: As a power user I want to filter meteor data by size and see specific data on meteor name and class.

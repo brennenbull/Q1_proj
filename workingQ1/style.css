@@ -1,6 +1,27 @@
 body{
   background-color: #062556;
+  /*background-color: #8c0101;*/
 }
+
+.header{
+  height: 100px;
+  border-style: solid;
+  border-radius: 10px;
+  background-color: #e5e7ea;
+  border-width: 2px;
+  margin-bottom: 2px;
+}
+
+.logo{
+  height: 90px;
+}
+
+.credit{
+  float: right;
+  font-size: .7rem;
+  margin-top: 30px;
+}
+
 #map {
   position: relative;
   width: 95%;
@@ -55,7 +76,9 @@ input[type='range'] {
 }
 
 .charts{
-  display: flex;
+  position: relative;
+  /*display: flex;*/
+  margin: 10px;
 }
 
 .space{
@@ -68,11 +91,17 @@ input[type='range'] {
 }
 
 .leftChart{
+  position: absolute;
   border-style: solid;
   border-radius: 10px;
   background-color: #e5e7ea;
   border-width: 2px;
   height: 504px;
+  padding: 10px;
+}
+
+.leftChart:hover{
+  box-shadow: inset 0 0 1em black;
 }
 
 .rightPad{
@@ -81,9 +110,19 @@ input[type='range'] {
 }
 
 .rightChart{
+  position: absolute;
   border-style: solid;
   border-radius: 10px;
   background-color: #e5e7ea;
   border-width: 2px;
   height: 504px;
+  padding: 10px
+}
+
+.rightChart:hover{
+  box-shadow: inset 0 0 1em black;
+}
+
+rect{
+	fill:none;
 }

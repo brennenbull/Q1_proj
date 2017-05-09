@@ -34,8 +34,8 @@ $.getJSON("https://data.nasa.gov/resource/y77d-th95.json")
     'A': 'Achondrite: Stony meteorite',
     'O': 'Ordinary chondrite: comprise 87% of all finds',
     'M': 'Martian: rock formed on mars',
-    'E': 'Enstatite chondrite: comprising only 2% of meteorites',
-    'I': 'Iron: Historically used for forging',
+    'E': 'Enstatite chondrite',
+    'I': 'Iron: Historically used as and important sorce of forging iron',
     'D': 'Diogenit: Named after a greek philosopher who first suggest meteors where from outer space',
     'P': 'Pallasite: Formed by impact-generated mixtures',
     'K': 'Kakangari: Subclass of Carbonaceous Chondrites',
@@ -120,7 +120,8 @@ $.getJSON("https://data.nasa.gov/resource/y77d-th95.json")
       legend: { position: 'bottom'},
       hAxis: {textStyle: {fontSize: 10} },
       vAxis: {viewWindow:{max: 300, min: 0}},
-      backgroundColor: '#E4E4E4'
+      backgroundColor: 'red'
+      // backgroundColor: '#E4E4E4'
     };
 
     let chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
@@ -197,7 +198,8 @@ function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
     zoom: 2,
     center: new google.maps.LatLng(0.0,0.0),
-    mapTypeId: 'terrain'
+    mapTypeId: 'terrain',
+    scrollwheel: false
   });
 
   map.data.loadGeoJson("https://data.nasa.gov/resource/y77d-th95.geojson");

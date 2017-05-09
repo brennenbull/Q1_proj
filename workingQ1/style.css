@@ -1,15 +1,28 @@
+body{
+  background-color: #062556;
+}
 #map {
   position: relative;
-  width: 1021px;
-  height: 600px;
+  width: 95%;
+  height: 100%;
   margin: auto;
+  border-radius: 10px;
+}
+
+.timeScale{
+  border-style: solid;
+  border-radius: 10px;
+  background-color: #e5e7ea;
+  border-width: 2px;
+  margin-bottom: 5px;
 }
 
 .rangeslider,
 input[type='range'] {
-  max-width: 1400px;
+  max-width: 95%;
   margin-top: 10px;
   margin-bottom: 50px;
+  left: 37px;
 }
 
 .rangeslider__ruler {
@@ -27,4 +40,50 @@ input[type='range'] {
   content: "";
   display: inline-block;
   width: 100%;
+}
+
+.rangeslider__fill{
+  background-color: #6fa3f7;
+}
+.centerChart{
+  height: 600px;
+  border-style: solid;
+  border-radius: 10px;
+  background-color: #e5e7ea;
+  border-width: 2px;
+  margin-bottom: 5px;
+}
+
+.charts{
+  display: flex;
+}
+
+.space{
+  width: 5px;
+}
+
+.leftPad{
+  padding-left: 0px;
+  padding-right: 5px;
+}
+
+.leftChart{
+  border-style: solid;
+  border-radius: 10px;
+  background-color: #e5e7ea;
+  border-width: 2px;
+  height: 504px;
+}
+
+.rightPad{
+  padding-right: 0px;
+  padding-left: 5px;
+}
+
+.rightChart{
+  border-style: solid;
+  border-radius: 10px;
+  background-color: #e5e7ea;
+  border-width: 2px;
+  height: 504px;
 }

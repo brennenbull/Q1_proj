@@ -1,0 +1,15 @@
+L: 'L chondrite: Second most common meteor group',
+H: 'H chondrite: Most common meteor group',
+U: 'Ureilite: Rare type of stony meteor',
+C: 'Carbonaceous Chondrites',
+S: 'Shergottites: Named after Sherghati, India',
+A: 'Achondrite: Stony meteorite',
+O: 'Ordinary chondrite: comprise 87% of all finds'
+M: 'Martian: rock formed on mars',
+E: 'Enstatite chondrite: comprising only 2% of meteorites',
+I: 'Iron: Historically used for forging',
+D: 'Diogenit: Named after a greek philosopher who first suggest meteors where from outer space',
+P: 'Pallasite: Formed by impact-generated mixtures',
+K: 'Kakangari: Subclass of Carbonaceous Chondrites',
+W: 'Winonaite Group',
+R: 'Rumuriti: Subclass of Carbonaceous Chondrites'

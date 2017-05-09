@@ -3,9 +3,9 @@ Proposal: My Project shows the rate and size of meteorites that have been record
 
 Technology Used: Google Maps API, Data.gov API, Javascript, JQuery, Bootstrap.
 
-MVP: Map meteorites using the google maps api and provide the user with a dynamic date filter. Make the map point size relative to the mass of the meteorite. Show the user information about a given meteorite and plots the users position.
+MVP: Map meteorites using the google maps api and provide the user with a dynamic date filter. Make the map point size relative to the mass of the meteorite. Add other Graphical data representations to show meteors over time and meteor class distribution.
 
-Stretch Goals: Clickable meteorite makers that populate a modal. Use the wikipedia api to show detailed meteorite information.
+Stretch Goals: Swap graph position on page so the main window can be whichever data representation the user choses. Add css animations for chart and map transitions.
 
 User Epic:
 1: As as user I want to zoom in on a specific region and see how the meteors populate that region.
@@ -15,3 +15,6 @@ User Stories:
 
 Wire framing:
 https://www.draw.io/#G0B6z8UWUQPC7qZXc2ZEp5REtYSTQ
+
+Project Planning:
+https://trello.com/b/XZqWMgY7/q1-project

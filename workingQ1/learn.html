@@ -6,8 +6,9 @@
     </script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    <!-- <script src="main.js" defer></script> -->
+    <script src="flip.js" defer></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="flip.css">
     <title>Learn More</title>
   </head>
   <body>
@@ -23,13 +24,18 @@
       </div>
       <div class="row">
         <div class="col-md-6 leftPad">
-          <div class="col-md-12 leftChart">
-            <h2>Class: L Chondrite</h2>
-            <h4>Ordinary Chondrites</h4>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/7/74/NWA869Meteorite.jpg" alt="L Chondrite" class="img-fluid cardimg">
-            <p>One of the most common groups of meteorites. Accounts for approximately 40% of ordinary chondtites. Thought to have originated from three parent asteroids.</p>
-            <p>Chemical Composition: Olivine, Hypersthene, Iron-nickel, Troilite</p>
-            <a class="btn" href="https://en.wikipedia.org/wiki/L_chondrite" role="button">For More information</a>
+          <div class="col-md-12 leftChart cardContainer effect__click">
+            <div class="flip__Front">
+              <h2>Class: L Chondrite</h2>
+              <h4>Ordinary Chondrites</h4>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/7/74/NWA869Meteorite.jpg" alt="L Chondrite" class="img-fluid cardimg">
+              <p>One of the most common groups of meteorites. Accounts for approximately 40% of ordinary chondtites. Thought to have originated from three parent asteroids.</p>
+              <p>Chemical Composition: Olivine, Hypersthene, Iron-nickel, Troilite</p>
+              <a class="btn" href="https://en.wikipedia.org/wiki/L_chondrite" role="button">For More information</a>
+            </div>
+            <div class="flip__Back">
+              <h2>Back</h2>
+            </div>
           </div>
         </div>
         <div class="col-md-6 rightPad">

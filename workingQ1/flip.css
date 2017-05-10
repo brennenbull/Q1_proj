@@ -1,0 +1,33 @@
+.cardContainer{
+  position: relative;
+}
+
+.flip__Front, .flip__Back {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.flip__Front, .flip__Back {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.3s;
+          transition: transform 0.3s;
+}
+
+.flip__Back{
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.cardContainer.effect__click.flipped .flip__Front {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.cardContainer.effect__click.flipped .flip__Back {
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
+}

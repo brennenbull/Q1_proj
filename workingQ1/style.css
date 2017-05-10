@@ -10,6 +10,7 @@ body{
   background-color: #e5e7ea;
   border-width: 2px;
   margin-bottom: 2px;
+  margin-right: -12px;
 }
 
 .logo{
@@ -20,6 +21,10 @@ body{
   float: right;
   font-size: .7rem;
   margin-top: 30px;
+}
+
+.btn-primary{
+  margin-top: 25px;
 }
 
 #map {
@@ -87,11 +92,29 @@ input[type='range'] {
 
 .leftPad{
   padding-left: 0px;
-  padding-right: 5px;
+  padding-right: 4px;
 }
 
 .leftChart{
-  position: absolute;
+  border-style: solid;
+  border-radius: 10px;
+  background-color: #e5e7ea;
+  border-width: 2px;
+  height: 504px;
+  padding: 10px;
+  margin: auto;
+}
+
+.leftChart:hover{
+  box-shadow: inset 0 0 1em black;
+}
+
+.rightPad{
+  padding-right: 3px;
+  padding-left: 0px;
+}
+
+.rightChart{
   border-style: solid;
   border-radius: 10px;
   background-color: #e5e7ea;
@@ -100,29 +123,23 @@ input[type='range'] {
   padding: 10px;
 }
 
-.leftChart:hover{
-  box-shadow: inset 0 0 1em black;
-}
-
-.rightPad{
-  padding-right: 0px;
-  padding-left: 5px;
-}
-
-.rightChart{
-  position: absolute;
-  border-style: solid;
-  border-radius: 10px;
-  background-color: #e5e7ea;
-  border-width: 2px;
-  height: 504px;
-  padding: 10px
-}
-
 .rightChart:hover{
   box-shadow: inset 0 0 1em black;
 }
 
+.row{
+  margin-bottom: 2px;
+}
+
+.learn{
+  position: relative;
+}
+
+.cardimg{
+  display: block;
+  height: 200px;
+  width: 250px;
+}
 rect{
 	fill:none;
 }

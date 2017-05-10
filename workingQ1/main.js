@@ -5,7 +5,6 @@ $.getJSON("https://data.nasa.gov/resource/y77d-th95.json")
 
   var tableArray = [['Mass', 'Meteorites']];
   var pieArray = [['Class', 'Meteorites', {role:'tooltip'}]];
-  // var pieArray = [['Class', 'Meteorites']];
   var $yearSlide = $('input[name="year"]');
   var $ruler1 = $('<div class="rangeslider__ruler" />');
   var filterYear=$yearSlide.val();

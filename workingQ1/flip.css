@@ -1,13 +1,36 @@
 .cardContainer{
   position: relative;
+  padding: 0px;
+}
+
+.leftChart{
+  background-color: transparent;
+  border-style: none;
+}
+
+.rightChart{
+  background-color: transparent;
+  border-style: none;
+}
+
+.front{
+  height: 420px;
+  width: auto;
 }
 
 .flip__Front, .flip__Back {
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 2px;
+  background-color: #e5e7ea;
   position: absolute;
-  top: 10px;
-  left: 10px;
   width: 100%;
   height: 100%;
+  padding: 10px;
+}
+
+.flip__Front:hover, .flip__Back:hover{
+  box-shadow: inset 0 0 1em black;
 }
 
 .flip__Front, .flip__Back {

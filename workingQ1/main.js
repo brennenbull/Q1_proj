@@ -25,12 +25,12 @@ $.getJSON("https://data.nasa.gov/resource/y77d-th95.json")
       }
     }
     var meteorInfo = {
-    'L': 'L chondrite: Second most common meteor group',
-    'H': 'H chondrite: Most common meteor group',
+    'L': 'L chondrite: One of the most common meteor groups',
+    'H': 'H chondrite: One of the most common meteor groups',
     'U': 'Ureilite: Rare type of stony meteor',
     'C': 'Carbonaceous Chondrites',
     'S': 'Shergottites: Named after Sherghati, India',
-    'A': 'Achondrite: Stony meteorite',
+    'A': 'Achondrite: Stony meteorites',
     'O': 'Ordinary chondrite: comprise 87% of all finds',
     'M': 'Martian: rock formed on mars',
     'E': 'Enstatite chondrite',
@@ -119,8 +119,7 @@ $.getJSON("https://data.nasa.gov/resource/y77d-th95.json")
       legend: { position: 'bottom'},
       hAxis: {textStyle: {fontSize: 10} },
       vAxis: {viewWindow:{max: 300, min: 0}},
-      backgroundColor: 'red'
-      // backgroundColor: '#E4E4E4'
+      backgroundColor: '#E4E4E4'
     };
 
     let chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
@@ -136,7 +135,7 @@ $.getJSON("https://data.nasa.gov/resource/y77d-th95.json")
       backgroundColor: '#E4E4E4'
     };
 
-    var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+    let chart = new google.visualization.PieChart(document.getElementById('piechart'));
     chart.draw(data, options);
   }
 

@@ -12,3 +12,20 @@
     });
   }
 })();
+
+
+$('#drop').click(function(){
+  if($('.data').css('display') == 'none'){
+    $('.data').css('display', '');
+  }
+  $('.learn').slideToggle(900, 'swing', function(){
+    if($('#drop').text() == 'Learn More'){
+      $('#drop').text('See The Data');
+      $('.data').css('display', 'none');
+      $('.header').addClass('sticky-top');
+    } else {
+      $('#drop').text('Learn More');
+      $('.header').removeClass('sticky-top');
+    }
+  });
+});

@@ -13,8 +13,16 @@ body{
   margin-right: -12px;
 }
 
-.logo{
+.nasaLogo{
   height: 90px;
+}
+
+.logoContainer{
+  padding-top: 20px;
+}
+
+.myLogo{
+  height: 60px;
 }
 
 .credit{
@@ -25,6 +33,10 @@ body{
 
 .btn-primary{
   margin-top: 25px;
+}
+
+.learn{
+  display: none;
 }
 
 #map {
@@ -69,8 +81,24 @@ input[type='range'] {
 }
 
 .rangeslider__fill{
-  background-color: #6fa3f7;
+  animation: pulse 1s infinite;
+  /*background-color: #6fa3f7;*/
 }
+
+@keyframes pulse {
+  0%{
+    background-color: #6fa3f7;
+  }
+  50%{
+    background-color: #4472ff;
+  }
+  100%{
+    background-color: #6fa3f7;
+  }
+
+}
+
+
 .centerChart{
   height: 600px;
   border-style: solid;

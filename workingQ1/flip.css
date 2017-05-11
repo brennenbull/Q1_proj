@@ -1,14 +1,6 @@
 .cardContainer{
   position: relative;
   padding: 0px;
-}
-
-.leftChart{
-  background-color: transparent;
-  border-style: none;
-}
-
-.rightChart{
   background-color: transparent;
   border-style: none;
 }

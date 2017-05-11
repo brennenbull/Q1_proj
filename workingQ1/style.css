@@ -63,6 +63,13 @@ input[type='range'] {
   left: 37px;
 }
 
+@media only screen and (max-width: 1350px){
+  .rangeslider__ruler{
+    display: none;
+  }
+}
+
+
 .rangeslider__ruler {
   cursor: pointer;
   font-size: .6rem;

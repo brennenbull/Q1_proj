@@ -18,7 +18,7 @@ $('#drop').click(function(){
   if($('.data').css('display') == 'none'){
     $('.data').css('display', '');
   }
-  $('.learn').slideToggle(900, 'swing', function(){
+  $('.learn').slideToggle(1200, 'swing', function(){
     if($('#drop').text() == 'Learn More'){
       $('#drop').text('See The Data');
       $('.data').css('display', 'none');

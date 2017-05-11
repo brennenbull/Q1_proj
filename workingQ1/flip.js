@@ -1,8 +1,8 @@
 (function() {
   var cards = document.querySelectorAll(".cardContainer.effect__click");
-  for ( var i  = 0, len = cards.length; i < len; i++ ) {
+  for (var i =  0; i < cards.length;  i++) {
     var card = cards[i];
-    clickListener( card );
+    clickListener(card);
   }
 
   function clickListener(card) {

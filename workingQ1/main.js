@@ -8,7 +8,7 @@ $.getJSON("https://data.nasa.gov/resource/y77d-th95.json")
   var $yearSlide = $('input[name="year"]');
   var $ruler1 = $('<div class="rangeslider__ruler" />');
   var filterYear=$yearSlide.val();
-
+  var $timeLable = $('.timeLable');
 
   function makeClassChart(data, array){
     var meteorClass = {};
@@ -149,6 +149,7 @@ $.getJSON("https://data.nasa.gov/resource/y77d-th95.json")
       makeClassChart(data, pieArray);
       drawAreaChart();
       drawPieChart();
+      $timeLable.text(filterYear);
       map.data.revertStyle();
       map.data.forEach(function(feature){
         if(typeof(feature.f.year) !== 'object' && feature.f.year !== undefined){
@@ -169,6 +170,7 @@ $.getJSON("https://data.nasa.gov/resource/y77d-th95.json")
     onInit: function() {
       $ruler1[0].innerHTML = getRulerRange(this.min, this.max, this.step);
       this.$range.prepend($ruler1);
+      $timeLable.text(filterYear);
     }
   });
 
